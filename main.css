@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(Thistle, gold);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-family: Arial;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: black;
+
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 5px;
+  max-width: 90%;
+  font-size: 1.2em;
+
+  text-align: center;
+
+}
+
+a{
+  color: black;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 900px){
+  p {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 50%;
+    font-size: 1em;
+  }
+}
