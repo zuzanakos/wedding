@@ -2,49 +2,55 @@ body {
   background-color: gold;
 }
 
-img {
-  width: 100%;
-  height: auto;
+#countdown {
+  font-size: 1.6rem;
+  text-align: right;
+  position: absolute;
+  right: 1em;
+  top: 0;
 }
 
-#demo {
-  font-size: 60px;
-  margin-top: 0px;
-}
-
-p {
+.text {
+  font-size: .7em;
   font-family: 'EB Garamond', serif;
   line-height: 1.3em;
   font-weight: 400;
   color: black;
-
-  padding-bottom: 10px;
-  position: absolute;
-  bottom: 5px;
-  max-width: 90%;
-  font-size: 1.2em;
-
-  text-align: center;
-
 }
 
-a{
+.text p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
   color: black;
   text-decoration: underline;
 }
+.row { 
+  display: flex;
+  
+  margin: 4rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.text svg, .penis img {
+  display: inline-block;
+  width: 90vw;
+}
 
 @media screen and (min-width: 900px){
-  p {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    max-width: 50%;
-    font-size: 1.5em;
+  .row {
+    height: 27vh;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 27vh;
+    margin: 0 1rem;
   }
-  
-  #demo {
-  position: fixed;
-  top: 5px;
-  font-size: 60px;
-  margin-top: 0px;
-}
+  .text svg, .penis img {
+    display: inline-block;
+    width: 33vw;
+  }
 }
